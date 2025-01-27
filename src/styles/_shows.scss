@@ -1,0 +1,68 @@
+@use 'variaveis';
+
+.shows {
+    padding: 5.6vw;
+    min-height: 50vw;
+    background-image: url(../images/ironman_hero_banner.jpg);
+    background-repeat: no-repeat;
+    position: relative; // Necessário para posicionar o corte 
+    clip-path: polygon(0 0, 100% 0, 100% 94%, 0 100%);
+    background-size: contain;
+       
+    &__list {
+        display: none;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 24px;
+        list-style-type: none;
+
+
+        @media (max-width: 768px) {
+            grid-template-columns: 1fr 1fr;
+        }
+
+        &--is-active {
+            display: grid;
+        }
+
+        &__item {
+            img {
+                max-width: 100%;
+                border-radius: 4px;
+            }
+        }
+    }
+
+    &__tabs {
+        display: flex;
+        justify-content: center;
+        padding: 150px 0 12px 0;
+
+        @media (max-width: 768px) {
+            white-space: nowrap;
+            overflow-x: scroll;
+            padding-left: 20px;
+        }
+
+        &__button{
+            color: variaveis.$corTextoSecundario;
+            font-size: 12px;
+            border: none;
+            padding-bottom: 5px;
+            background: none;
+            text-transform: uppercase;
+            margin: 0 1vw;
+            cursor: pointer;
+            border-bottom: 5px solid transparent;
+
+
+            &--is-active {
+                border-color: variaveis.$corDeFundoBotaoPrimario;
+            }
+
+            @media (max-width: 768px) {
+                font-size: 16px;
+            }
+        }
+    }
+
+}

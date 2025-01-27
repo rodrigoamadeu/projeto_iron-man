@@ -1,12 +1,233 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Iron Man</title>
-    <link rel="stylesheet" href="dist/css/main.css">
+    <link rel="stylesheet" href="./dist/css/main.css">
 </head>
 <body>
-    Olá que tal
+    <header class="header">
+        <div class="header__container">
+            <div class="header__content">
+                <h1 class="header__content">
+                    <img  src="./dist/images/logo_marvel.png" alt="Logo Disney+">
+                </h1>
+            </div>
+                <ul class="header__links">
+                    <li class="header__links__item">
+                        <a href="#" class="nav-links">News</a>
+                    </li>
+                    <li class="header__links__item">
+                        <a href="#" class="nav-links">Comics</a>
+                    </li>
+                    <li class="header__links__item">
+                        <a href="#" class="nav-links">Caracters</a>
+                    </li>
+                    <li class="header__links__item">
+                        <a href="#" class="nav-links">Movies</a>
+                    </li>
+                    <li class="header__links__item">
+                        <a href="#" class="nav-links">Tv shows</a>
+                    </li>
+                    <li class="header__links__item">
+                        <a href="#" class="nav-links">games</a>
+                    </li>
+                    <li class="header__links__item">
+                        <a href="#" class="nav-links">videos</a>
+                    </li>
+                    <li class="header__links__item">
+                        <a href="#" class="nav-links">more</a>
+                    </li>
+                </ul>
+            
+        </div>
+    </header>
+    <section class="hero">
+        <h3 class="title--small">
+            Stream iron man da exclusively Disney+
+        </h3>
+        <div class="hero__container">
+            <div class="hero__container__content">
+                <div class="hero__container__content__branding">
+                    <img src="./dist/images/ironman_lob_branding.png" alt="Disney+">
+                </div>
+                <h3 class="title--small">
+                    On Digital & Blu-ray
+                </h3>
+                <ul class="hero__container__content__combos">
+                    <li class="hero__container__content__combos__combo">
+                        <button class="button">Get it Now</button>
+                    </li>
+                    <li class="hero__container__content__combos__combo">
+                        <button class="button">Stream and Disney+</button>
+                    </li>
+                </ul>
+            </div>
+            <div class="hero__container__banner">
+                <img src="./dist/images/ironman_hero.jpg" alt="Iron Man">
+            </div>
+        </div>
+    </section>
+    <section class="film">
+        <h2 class="title--big">Escolha seu filme</h2>
+        <ul class="film__list">
+            <li class="film__list__item">
+                <img src="./dist/images/ironman_capa.jpg" alt="Iron man ">
+                <strong class="title--small">R$ 29,90</strong>
+                <p class="text--big">
+                    Tony Stark é um industrial bilionário e inventor brilhante que realiza testes bélicos no exterior... 
+                </p>
+                <button class="button">Assista agora</button>
+            </li>
+            <li class="film__list__item">
+                <img src="./dist/images/iron2capa.jpg" alt="Iron man 2">
+                <strong class="title--small">R$ 29,90</strong>
+                <p class="text--big">
+                    Em um mundo ciente da existência do Homem de Ferro, o inventor bilionário Tony Stark sofre pressão...
+                   
+                </p>
+                <button class="button">Assista agora</button>
+            </li>
+            <li class="film__list__item">
+                <img src="./dist/images/iron3capa.jpg" alt="Iron man 3">
+                <strong class="title--small">R$ 29,90</strong>
+                <p class="text--big">
+                    Depois do inimigo ter reduzido o mundo de Tony a destroços, o Homem de Ferro precisa confiar ...
+                </p>
+                <button class="button">Assista agora</button>
+            </li>
+        </ul>
+        
+    </section>
+    <section class="shows">
+        <nav class="shows__tabs">
+            <button data-tab-button="em_breve" class="shows__tabs__button shows__tabs__button--is-active">
+                Homem de Ferro
+            </button>
+            <button data-tab-button="populares" class="shows__tabs__button">
+                Homem de Ferro 2
+            </button>
+            <button data-tab-button="star_plus" class="shows__tabs__button">
+                Homem de Ferro 3
+            </button>
+        </nav>
+        <ul data-tab-id="em_breve" class="shows__list shows__list--is-active">
+            <li class="shows__list__item">
+                <img src="./dist/images/homenferro/homem-de-ferro-armadura-mark-1.jpg" alt="Especial Homem de Ferro">
+            </li>
+            <li class="shows__list__item">
+                <img src="./dist/images/homenferro/Homem-de-Ferro-voando.jpg" alt="Homem de Ferro Mark1">
+            </li>
+            <li class="shows__list__item">
+                <img src="./dist/images/homenferro/homem-de-ferro.jpg" alt="Homem de Ferro Voando">
+            </li>
+            <li class="shows__list__item">
+                <img src="./dist/images/homenferro/Iron-Man-da-Marvel.jpg" alt="Homem de ferro">
+            </li>
+            <li class="shows__list__item">
+                <img src="./dist/images/homenferro/mark1-2-3.jpg" alt="Homem de ferro">
+            </li>
+            <li class="shows__list__item">
+                <img src="./dist/images/homenferro/mark1.jpg" alt="Mark1">
+            </li>
+        </ul>
+        <ul data-tab-id="populares" class="shows__list">
+            <li class="shows__list__item">
+                <img src="./dist/images/homenferro2/5_homem_de_ferro.jpg" alt="homem de ferro">
+            </li>
+            <li class="shows__list__item">
+                <img src="./dist/images/homenferro2/antonvankon.jpg" alt="homem de ferro">
+            </li>
+            <li class="shows__list__item">
+                <img src="./dist/images/homenferro2/fight-ironman.jpg" alt="homem de ferro">
+            </li>
+            <li class="shows__list__item">
+                <img src="./dist/images/homenferro2/iron-man-2.jpg" alt="homem de ferro">
+            </li>
+            <li class="shows__list__item">
+                <img src="./dist/images/homenferro2/ironmanfaceface.jpg" alt="homem de ferro">
+            </li>
+            <li class="shows__list__item">
+                <img src="./dist/images/homenferro2/5_homem_de_ferro.jpg" alt="homem de ferro">
+            </li>
+        </ul>
+        <ul data-tab-id="star_plus" class="shows__list">
+            <li class="shows__list__item">
+                <img src="./dist/images/homenferro3/especial_homem_de_ferro.jpg" alt="Libertadores">
+            </li> 
+            <li class="shows__list__item">
+                <img src="./dist/images/homenferro3/homem_de_ferro_3_a_plano_critico.jpg" alt="Belair">
+            </li>
+            <li class="shows__list__item">
+                <img src="./dist/images/homenferro3/iron-man-3.jpg" alt="NBA">
+            </li>
+            <li class="shows__list__item">
+                <img src="./dist/images/homenferro3/ironman.jpg" alt="The Simpsons">
+            </li>
+            <li class="shows__list__item">
+                <img src="./dist/images/homenferro3/omem-de-ferro-3.jpg" alt="Premier league">
+            </li>
+            <li class="shows__list__item">
+                <img src="./dist/images/homenferro3/Tony_e_sua_armadura.jpg" alt="The the kardashians">
+            </li>
+        </ul>
+    </section>
+    <section class="image-text-section">
+        <img src="./dist/images/iron_man_mark_1_2_3.jpg" alt=" Imagem com TV, Computador, tablet e celular">
+        <div class="image-text-section__text_container">
+            <h2 class="title">Overview</h2>
+            <p class="text--big">
+                2008's Iron Man tells the story of Tony Stark, a billionaire industrialist and genius inventor who is kidnapped and forced to build a devastating weapon. Instead, using his intelligence and ingenuity, Tony builds a high-tech suit of armor and escapes captivity. When he uncovers a nefarious plot with global implications, he dons his powerful armor and vows to protect the world as Iron Man.
+            </p>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="footer__container">
+            <img class="footer__logo" src="./dist/images/logo_marvel.png" alt="Disney logo">
+            <ul class="footer__links">
+                <li class="footer__links__item">
+                    <div class="language-selector">
+                        <img src="./dist/images/globe.svg" alt="Globo Mundo">
+                        <select>
+                            <option>English</option>
+                            <option selected> Português</option>
+                        </select>
+                    </div>
+                </li>
+                <li class="footer__links__item">
+                    <a href="#" class="text--small">Termos e Condições de uso</a>
+                </li>
+                <li class="footer__links__item">
+                    <a href="#" class="text--small">Política de privacidade</a>
+                </li>
+                <li class="footer__links__item">
+                    <a href="#" class="text--small">Proteção de Dados no Brasil</a>
+                </li>
+                <li class="footer__links__item">
+                    <a href="#" class="text--small">Anuncios personalizados</a>
+                </li>
+                <li class="footer__links__item">
+                    <a href="#" class="text--small">Dispositivos compatíveis</a>
+                </li>
+                <li class="footer__links__item">
+                    <a href="#" class="text--small">Ajuda</a>
+                </li>
+                <li class="footer__links__item">
+                    <a href="#" class="text--small">Sobre o Disney+</a>
+                </li>
+            </ul>
+            <p class="text--small">
+                © 2024 Disney e suas empresas afiliadas. Todos os direitos reservados.
+            </p>
+            <p class="text--small">
+                A programação do conteúdo esportivo varia de acordo com o plano. Para usar o Disney+, é necessário ser assinante e ter mais de 18 anos de idade. Conteúdo sujeito a disponibilidade.
+            </p>
+            <p class="text--small">
+                O serviço Disney+ é comercializado por The Walt Disney Company (Brasil) Ltda., World Trade Center, Av. Das Nações Unidas, 12.551, 12.555, 12.559, Piso 10, São Paulo/SP – CEP 04578-903, Brasil e CNPJ/M 73.042.962/0004-20
+            </p>
+        </div>
+    </footer>
+    <script src="./dist/js/main.js"></script>
 </body>
 </html>
