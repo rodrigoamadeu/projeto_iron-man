@@ -1,7 +1,7 @@
 @use 'variaveis';
 
 .hero {
-    height: 88vh; // 80% da área visível
+    height: 90vh; // 80% da área visível
     text-align: center;
     background-color: variaveis.$corDeFundoHero;
     position: relative; // Necessário para posicionar o corte 
@@ -18,10 +18,9 @@
 
     .title--small {
         &:first-child {
-            font-size: 14px;
+            font-size: 18px;
             text-transform: uppercase;
             padding: 0.5vw 0;
-            color: variaveis.$corTextoSecundario;
         }
     }
 
@@ -88,10 +87,12 @@
         &__banner {
             width: 60%;
             clip-path: polygon(0 0, 100% 0, 100% 100%, 20% 100%);
-            background-size: contain;
             background-position: center center; // Adicionando centro para manter o foco da imagem
-            height: 100vh;
             overflow: hidden; // Garante que nada ultrapasse o container
+            img{
+                width: 100%;
+                height: 85vh;
+            }
             @media (max-width: 768px) {
                 height: 60vh;
             }
