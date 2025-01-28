@@ -25,6 +25,9 @@
                     border-bottom: solid variaveis.$corDeFundoBotaoPrimario;
                     padding-bottom: 8px;
                 }
+                @media (max-width: 768px) {
+                    font-size: 10px;    
+                }
             }
         }
     }

@@ -12,6 +12,7 @@
 
         @media (max-width: 768px) {
             display: block;
+            margin: 0 25% 0 25%;
         }
 
         .button {
@@ -24,21 +25,19 @@
             max-width: 380px;
             width: 100%;
 
-            &:nth-child(2) {
-                background-image: url(../images/fundo_combo_plus.png);
-                background-repeat: no-repeat;
-                background-size: contain;
-
-            }
-
             img {
                 height: 24vw;
+                @media (max-width: 768px) {
+                    height: auto;
+                    width: 100%;
+                }
             }
 
             strong {
                 display: block;
                 margin-top: 24px;
             }
+
         }
     }
     
